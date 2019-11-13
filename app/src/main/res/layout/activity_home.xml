@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/junglebg"
+    android:id="@+id/layoutParent"
+    tools:context=".Screens.HomeActivity">
+<ImageView
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:layout_marginRight="40dp"
+    android:id="@+id/imgMonkey"
+    android:src="@drawable/monkey"
+    android:layout_alignRight="@id/layoutKe" />
+    <LinearLayout
+        android:id="@+id/layoutKe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/logoGame"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/namegame"
+        android:layout_height="300dp"/>
+
+
+</RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnTuvung"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/bgbtn"
+            android:text="Từ vựng"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPurple"
+            android:textSize="28sp"
+           />
+
+        <Button
+            android:id="@+id/btnTrochoi"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bgbtn"
+            android:paddingBottom="10dp"
+            android:text="Trò chơi"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPurple"
+            android:textSize="28sp" />
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

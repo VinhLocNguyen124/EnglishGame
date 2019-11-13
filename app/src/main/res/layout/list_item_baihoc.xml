@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_margin="0dp"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/elevation" />
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_item_list_baihoc_connguoi"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tvTitleBaihocITLVBH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Bài học thứ nhất"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvGioBaiHocITLVBH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9 AM"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/tvTiendoITLVBH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progressBarTiendoBaiHocITLVBH"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Tiến độ"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/progressBarTiendoBaiHocITLVBH"
+            android:layout_width="250dp"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            app:rcBackgroundColor="#6FFFFFFF"
+            app:rcBackgroundPadding="5dp"
+            app:rcMax="100"
+            app:rcProgress="50"
+            app:rcProgressColor="#FFFFFF"
+            app:rcRadius="5dp"
+            app:rcReverse="false"
+            app:rcSecondaryProgress="50" />
+
+        <TextView
+            android:id="@+id/tvTiendoBaihocITLVBH"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/progressBarTiendoBaiHocITLVBH"
+            android:layout_marginBottom="8dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

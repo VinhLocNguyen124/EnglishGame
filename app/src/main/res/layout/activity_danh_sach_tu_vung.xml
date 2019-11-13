@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Screens.DanhSachTuVungActivity">
+
+    <RelativeLayout
+        android:background="@drawable/connguoi_header"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+
+            <RelativeLayout
+                android:layout_alignParentBottom="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_bogoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvTitleBaihocDSTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Bài học thứ nhất"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_clock" />
+
+                    <TextView
+                        android:id="@+id/tvGioBaiHocITLVBH"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9 AM"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvTiendoDSTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_below="@id/tvTitleBaihocDSTV"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="Tiến độ"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                    android:id="@+id/progressBarTiendoBaiHocDSTV"
+                    android:layout_width="280dp"
+                    android:layout_height="20dp"
+                   android:layout_below="@+id/tvTiendoDSTV"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:rcBackgroundColor="#DDD7D7"
+                    app:rcBackgroundPadding="5dp"
+                    android:layout_marginTop="10dp"
+                    app:rcMax="100"
+                    app:rcProgress="50"
+                    app:rcProgressColor="#03A9F4"
+                    app:rcRadius="5dp"
+                    app:rcReverse="false"
+                    app:rcSecondaryProgress="50" />
+
+                <TextView
+                    android:id="@+id/tvTiendoBaihocITLVBH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:layout_alignBottom="@+id/progressBarTiendoBaiHocDSTV"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_toRightOf="@+id/progressBarTiendoBaiHocDSTV"
+                    android:text="25%"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+       android:background="#F0ECEC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+        <RelativeLayout
+            android:background="@drawable/bg_listview_tuvung"
+            android:layout_width="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lvDanhSachTuVung"
+            android:layout_width="match_parent"
+           android:layout_margin="10dp"
+            android:scrollbars="none"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
